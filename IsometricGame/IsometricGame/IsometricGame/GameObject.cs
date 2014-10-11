@@ -1,28 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 namespace IsometricGame
 {
+    /// <summary>
+    /// Generic class that holds variables and functions for any kind of object
+    /// </summary>
     public class GameObject
     {
-        private int positionX, positionY, length, width;
-        public int getX()
+        protected Vector2 position, isoPosition;
+
+        /// <summary>
+        /// GameObject constructor that takes no parameter; For classes that extend game object
+        /// </summary>
+        public GameObject(){}
+
+        /// <summary>
+        /// GameObject constructor that takes position
+        /// </summary>
+        /// <param name="position">Position of the GameObject</param>
+        public GameObject(Vector2 position)
         {
-            return positionX;
+            this.position = position;
+            calculateIsoPosition(position);
         }
-        public int getY()
+
+        /// <summary>
+        /// Returns the x coordinate of the object
+        /// </summary>
+        /// <returns>positionX</returns>
+        public float getX()
         {
-            return positionY;
+            return position.X;
         }
-        public int getLength()
+        public float getY()
         {
-            return length;
+            return position.Y;
         }
-        public int getWidth()
+
+        private void calculateIsoPosition(Vector2 position)
         {
-            return width;
+            isoPosition.X = position.X - position.Y;
+            isoPosition.Y = (position.X + position.Y) / 2;
         }
     }
 }
