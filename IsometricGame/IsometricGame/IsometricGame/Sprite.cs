@@ -5,8 +5,7 @@ using System.Text;
 
 namespace IsometricGame
 {
-    class Player
+    class Sprite
     {
-        //TO DO add sprite variables
     }
 }

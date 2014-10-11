@@ -11,15 +11,16 @@ using Microsoft.Xna.Framework.Media;
 
 namespace IsometricGame
 {
-    /// <summary>
-    /// This is the main type for your game
-    /// </summary>
-    public class Game1 : Microsoft.Xna.Framework.Game
+    public class MainGame : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public Game1()
+        //Game states
+        public enum GameStates {TitleScreen, InstructionPage, Playing, GameOver, GameWin};
+        public static GameStates gameState;
+
+        public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -47,7 +48,8 @@ namespace IsometricGame
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            //starts the game at the title screen
+            gameState = GameStates.TitleScreen;
         }
 
         /// <summary>
@@ -56,7 +58,6 @@ namespace IsometricGame
         /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
         }
 
         /// <summary>
@@ -66,11 +67,59 @@ namespace IsometricGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            MouseState mouse = Mouse.GetState();
+            KeyboardState keyboard = Keyboard.GetState();
 
-            // TODO: Add your update logic here
+            switch (gameState)
+            {
+                case GameStates.TitleScreen:
+                    //TODO: display title screen
+
+                    if (mouse.LeftButton == ButtonState.Pressed)
+                    {
+                        //game begins
+                        gameState = GameStates.Playing;
+                    }
+                    if (keyboard.IsKeyDown(Keys.I))
+                    {
+                        //displays instructions
+                        gameState = GameStates.InstructionPage;
+                    }
+                    break;
+                case GameStates.InstructionPage:
+                    if (mouse.LeftButton == ButtonState.Pressed)
+                    {
+                    }
+                    break;
+                case GameStates.Playing:
+                    if (keyboard.IsKeyDown(Keys.W))
+                    {
+                        //Player moves up
+                    }
+                    if (keyboard.IsKeyDown(Keys.A))
+                    {
+                        //Player moves left
+                    }
+                    if (keyboard.IsKeyDown(Keys.S))
+                    {
+                        //Player moves down
+                    }
+                    if (keyboard.IsKeyDown(Keys.D))
+                    {
+                        //Player moves right
+                    }
+                    if (mouse.LeftButton == ButtonState.Pressed)
+                    {
+                        //pick up item
+                        //TODO make item disappear, switch player sprite,
+                        //set boolean to has object to allow item use
+                    }
+                    break;
+                case GameStates.GameOver:
+                    break;
+                case GameStates.GameWin:
+                    break;
+            }
 
             base.Update(gameTime);
         }
