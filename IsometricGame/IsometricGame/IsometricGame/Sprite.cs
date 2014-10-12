@@ -15,7 +15,7 @@ namespace IsometricGame
     /// <summary>
     /// Stores and is responsible for drawing animations as well as static sprites
     /// </summary>
-    class Sprite
+    public class Sprite
     {
         private int frameWidth, numberOfFrames, currentFrame, timePerFrame, count;
         private Texture2D sprite;
@@ -82,7 +82,9 @@ namespace IsometricGame
         /// <param name="color">Color to tint the sprite</param>
         virtual public void Draw(SpriteBatch spriteBatch, Vector2 position, Color color)
         {
-            spriteBatch.Draw(sprite, position, new Rectangle(frameWidth * currentFrame, 0, Width, Height), color, 0, new Vector2(), 1, 0, 0)
+            spriteBatch.Begin();
+            spriteBatch.Draw(sprite, position, new Rectangle(frameWidth * currentFrame, 0, Width, Height), color, 0, new Vector2(), 1, 0, 0);
+            spriteBatch.End();
         }
     }
 }

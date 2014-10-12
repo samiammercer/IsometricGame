@@ -1,0 +1,15 @@
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.csprojResolveAssemblyReference.cache
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\IsometricGame.exe
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\IsometricGame.pdb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.exe
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\obj\x86\Debug\IsometricGame.pdb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt0.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt1.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt2.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt3.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt4.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt5.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt6.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt7.xnb
+C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt8.xnb

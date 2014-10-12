@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace IsometricGame
 {
-    class Tile: GameObject
+    public class Tile: GameObject
     {
         Sprite sprite;
 
@@ -19,6 +19,11 @@ namespace IsometricGame
         {
             this.sprite = sprite;
             this.position = position;
+        }
+
+        virtual public void Draw(SpriteBatch spriteBatch)
+        {
+            sprite.Draw(spriteBatch, isoPosition, Color.White);
         }
     }
 }

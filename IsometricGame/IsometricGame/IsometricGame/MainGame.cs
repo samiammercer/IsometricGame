@@ -20,6 +20,16 @@ namespace IsometricGame
         public enum GameStates {TitleScreen, InstructionPage, Playing, GameOver, GameWin};
         public static GameStates gameState;
 
+        //create a sprite dictionary
+        public Dictionary<string, Sprite> spriteDictionary = new Dictionary<string,Sprite>();
+
+        //Tile and mapping
+        public enum mapTiles {walkable, horizontalWallBottom, horizontalWallTop, verticalWallBottom, verticalWallTop, topLeftCorner, bottomLeftCorner, topRightCorner, bottomRightCorner};
+        Texture2D mapTile0, mapTile1, mapTile2, mapTile3, mapTile4, mapTile5, mapTile6, mapTile7, mapTile8;
+        public int[,] map;
+        public const int mapWidth = 5, mapHeight = 6;
+        public Tile[,] tileMap = new Tile[mapWidth,mapHeight];
+
         public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -36,6 +46,15 @@ namespace IsometricGame
         {
             // TODO: Add your initialization logic here
 
+            //create maps
+            map = new int[,] {{5,2,2,2,2,7},
+                              {4,0,0,0,0,3},
+                              {4,0,0,0,0,3},
+                              {4,0,0,0,0,3},
+                              {6,1,1,1,1,8}};
+
+            
+
             base.Initialize();
         }
 
@@ -50,6 +69,19 @@ namespace IsometricGame
 
             //starts the game at the title screen
             gameState = GameStates.TitleScreen;
+
+            //loads environment tiles and adds them to the spriteDictionary
+            spriteDictionary["mapTile0"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt0"));
+            spriteDictionary["mapTile1"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt1"));
+            spriteDictionary["mapTile2"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt2"));
+            spriteDictionary["mapTile3"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt3"));
+            spriteDictionary["mapTile4"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt4"));
+            spriteDictionary["mapTile5"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt5"));
+            spriteDictionary["mapTile6"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt6"));
+            spriteDictionary["mapTile7"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt7"));
+            spriteDictionary["mapTile8"] = new Sprite(Content.Load<Texture2D>("MapTiles\\mt8"));
+
+            CreateMap(map, spriteDictionary);
         }
 
         /// <summary>
@@ -132,9 +164,58 @@ namespace IsometricGame
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            //Draws the map
+            foreach (Tile tile in tileMap)
+                tile.Draw(spriteBatch);
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+        
+        public void CreateMap(int[,] map, Dictionary<string, Sprite> spriteDictionary)
+        {
+            Sprite tileSprite;
+            for(int i = 0; i < mapWidth; ++i)
+            {
+                for (int j = 0; j < mapHeight; j++)
+                {
+                    int tile = map[i,j];
+                    switch(tile)
+                    {
+                        case 0:
+                            tileSprite = spriteDictionary["mapTile0"];
+                            break;
+                        case 1:
+                            tileSprite = spriteDictionary["mapTile1"];
+                            break;
+                        case 2:
+                            tileSprite = spriteDictionary["mapTile2"];
+                            break;
+                        case 3:
+                            tileSprite = spriteDictionary["mapTile3"];
+                            break;
+                        case 4:
+                            tileSprite = spriteDictionary["mapTile4"];
+                            break;
+                        case 5:
+                            tileSprite = spriteDictionary["mapTile5"];
+                            break;
+                        case 6:
+                            tileSprite = spriteDictionary["mapTile6"];
+                            break;
+                        case 7:
+                            tileSprite = spriteDictionary["mapTile7"];
+                            break;
+                        case 8:
+                            tileSprite = spriteDictionary["mapTile8"];
+                            break;
+                        default:
+                            tileSprite = spriteDictionary["mapTile0"];
+                            break;
+                    }
+                    tileMap[i,j] = new Tile(tileSprite, new Vector2(j * tileSprite.Width, i * tileSprite.Height));
+                }
+            }
         }
     }
 }
