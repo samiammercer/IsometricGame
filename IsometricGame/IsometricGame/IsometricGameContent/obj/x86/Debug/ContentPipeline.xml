@@ -2,13 +2,22 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
+      <Source>Font.spritefont</Source>
+      <Name>Font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\Font.xnb</Output>
+      <Time>2015-02-11T11:51:57.142371-06:00</Time>
+    </Item>
+    <Item>
       <Source>MapTiles\mt0.png</Source>
       <Name>MapTiles\mt0</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt0.xnb</Output>
-      <Time>2014-10-11T21:59:48.30395-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt0.xnb</Output>
+      <Time>2015-02-11T11:02:37.149431-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt1.png</Source>
@@ -16,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt1.xnb</Output>
-      <Time>2014-10-11T22:03:18.3058162-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt1.xnb</Output>
+      <Time>2015-02-11T11:02:37.1534358-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt2.png</Source>
@@ -25,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt2.xnb</Output>
-      <Time>2014-10-11T23:13:42.6195608-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt2.xnb</Output>
+      <Time>2015-02-11T11:02:37.1564394-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt3.png</Source>
@@ -34,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt3.xnb</Output>
-      <Time>2014-10-11T23:21:53.2962574-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt3.xnb</Output>
+      <Time>2015-02-11T11:02:37.1604442-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt4.png</Source>
@@ -43,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt4.xnb</Output>
-      <Time>2014-10-11T23:21:27.3757891-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt4.xnb</Output>
+      <Time>2015-02-11T11:02:37.1634478-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt5.png</Source>
@@ -52,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt5.xnb</Output>
-      <Time>2014-10-11T22:37:31.0508153-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt5.xnb</Output>
+      <Time>2015-02-11T11:02:37.1674526-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt6.png</Source>
@@ -61,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt6.xnb</Output>
-      <Time>2014-10-11T23:26:36.3642527-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt6.xnb</Output>
+      <Time>2015-02-11T11:02:37.1714574-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt7.png</Source>
@@ -70,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt7.xnb</Output>
-      <Time>2014-10-11T23:30:24.9582015-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt7.xnb</Output>
+      <Time>2015-02-11T11:02:37.1754622-06:00</Time>
     </Item>
     <Item>
       <Source>MapTiles\mt8.png</Source>
@@ -79,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt8.xnb</Output>
-      <Time>2014-10-12T00:20:24.1856574-05:00</Time>
+      <Output>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\MapTiles\mt8.xnb</Output>
+      <Time>2015-02-11T11:02:37.1784658-06:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -88,39 +97,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGameContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGameContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Samantha\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGameContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGameContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\samercer2s\Documents\GitHub\IsometricGame\IsometricGame\IsometricGame\IsometricGame\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-05:00</Value>
+        <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T12:41:18-05:00</Value>
+        <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-05:00</Value>
+        <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-05:00</Value>
+        <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-05:00</Value>
+        <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T12:41:18-05:00</Value>
+        <Value>2010-08-23T13:41:18-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-05-05T14:56:18.8151284-05:00</Value>
+        <Value>2013-12-18T14:00:40.5151859-06:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

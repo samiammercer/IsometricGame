@@ -30,7 +30,7 @@ namespace IsometricGame
         public GameObject(Vector2 position)
         {
             this.position = position;
-            calculateIsoPosition(position);
+            calculateIsoPosition();
         }
 
         /// <summary>
@@ -45,8 +45,16 @@ namespace IsometricGame
         {
             return position.Y;
         }
+        public float igetX()
+        {
+            return isoPosition.X;
+        }
+        public float igetY()
+        {
+            return isoPosition.Y;
+        }
 
-        private void calculateIsoPosition(Vector2 position)
+        protected void calculateIsoPosition()
         {
             isoPosition.X = position.X - position.Y;
             isoPosition.Y = (position.X + position.Y) / 2;

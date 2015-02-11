@@ -19,6 +19,7 @@ namespace IsometricGame
         {
             this.sprite = sprite;
             this.position = position;
+            calculateIsoPosition();
         }
 
         virtual public void Draw(SpriteBatch spriteBatch)

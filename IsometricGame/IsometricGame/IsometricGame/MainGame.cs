@@ -162,19 +162,29 @@ namespace IsometricGame
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            spriteBatch.Begin();
+            GraphicsDevice.Clear(Color.White);
+            SpriteFont font = Content.Load<SpriteFont>("Font");
             //Draws the map
             foreach (Tile tile in tileMap)
                 tile.Draw(spriteBatch);
+            for (int i = 0; i < mapWidth; ++i)
+            {
+                for (int j = 0; j < mapHeight; j++)
+                {
+                    int tile = map[i, j];
+                    spriteBatch.DrawString(font, tile.ToString(), new Vector2(10, 10), Color.White);
+                }
+            }
             // TODO: Add your drawing code here
-
+            spriteBatch.End();
             base.Draw(gameTime);
         }
         
         public void CreateMap(int[,] map, Dictionary<string, Sprite> spriteDictionary)
         {
             Sprite tileSprite;
+            
             for(int i = 0; i < mapWidth; ++i)
             {
                 for (int j = 0; j < mapHeight; j++)

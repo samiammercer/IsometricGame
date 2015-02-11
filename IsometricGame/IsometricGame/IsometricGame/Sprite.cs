@@ -82,9 +82,7 @@ namespace IsometricGame
         /// <param name="color">Color to tint the sprite</param>
         virtual public void Draw(SpriteBatch spriteBatch, Vector2 position, Color color)
         {
-            spriteBatch.Begin();
             spriteBatch.Draw(sprite, position, new Rectangle(frameWidth * currentFrame, 0, Width, Height), color, 0, new Vector2(), 1, 0, 0);
-            spriteBatch.End();
         }
     }
 }
